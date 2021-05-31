@@ -4,25 +4,25 @@
 
 <div class="sm:px-4 flex flex-wrap h-screen justify-center bg-gradient">
 
-        <div class="md:w-1/4 m-auto">
-            <div class="flex flex-wrap justify-center flex-col bg-persian-green-600 border-gray-200">
-                <div class="pb-5 mb-0  m-auto font-serif text-white text-5xl capitalize">Hellow</div>
+        <div class="sm:w-1/2 md:w-1/3 lg:w-25  md:min-w-0">
+            <div class="flex flex-wrap justify-center flex-col bg-persian-green-600 border-gray-300">
+                <div class="mb-0 py-5 m-auto font-serif text-white text-5xl capitalize">Hello</div>
             </div>
             <div class="relative min-w-0 break-words  bg-white   border p-10 pb-8">
 
                 <div class="border-b flex flex-wrap justify-center flex-col border-gray-200">
-                    <div class="pb-5 mb-0  m-auto font-bold text-gray-900 text-2xl uppercase"> <i class="fa fa-user" aria-hidden="true"></i> sign in</div>
+                    <div class="pb-5 mb-0  m-auto font-bold text-gray-800 text-2xl uppercase"> <i class="fa fa-user" aria-hidden="true"></i> sign in</div>
                 </div>
                 <div class="flex-auto pt-5">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="mb-4">
-                            <label class="block text-gray-700 text-sm font-bold mb-2 capitalize" for="username">
+                            <label class="block text-gray-600 text-sm font-bold mb-2 capitalize" for="username">
                               EMAIL
                             </label>
                             <div class="">
-                                <input id="email" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             @error('email')
                             <span class="hidden mt-1 text-sm text-red" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -37,7 +37,7 @@
                               PASSWORD
                             </label>
                             <div class="">
-                                <input id="password" type="password"  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" id="email" type="email" name="email" value="{{ old('email') }}" name="password" required autocomplete="current-password">
+                                <input id="password" type="password"  class="appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" id="email" type="email" name="email" value="{{ old('email') }}" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                 <span class="hidden mt-1 text-sm text-red" role="alert">
