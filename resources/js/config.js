@@ -7,11 +7,14 @@ window._ = require('lodash');
  */
 
 try {
-    window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
+    require('./functions');
+    require('d3');
+    window.c3 = require('c3/c3.js');
 
-    require('bootstrap');
-} catch (e) {}
+} catch (e) {
+    console.log(e);
+}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -22,6 +25,25 @@ try {
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+let token = document.head.querySelector('meta[name="csrf-token"]');
+
+if (token) {
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': token.content
+        }
+    });
+    $(document)
+        .ajaxComplete(function () {
+            Seriti.init();
+        });
+} else {
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+}
+
+Seriti.init();
+
+Seriti.onceOffInit();
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
