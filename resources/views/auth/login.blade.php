@@ -4,9 +4,9 @@
 
 <div class="sm:px-4 flex flex-wrap h-screen justify-center bg-gradient">
 
-        <div class="sm:w-1/2 md:w-1/3 lg:w-25  md:min-w-0">
-            <div class="flex flex-wrap justify-center flex-col bg-persian-green-600 border-gray-300">
-                <div class="mb-0 py-5 m-auto font-serif text-white text-5xl capitalize">Hello</div>
+        <div class="sm:w-1/2 md:w-1/3 lg:w-1/4 m-auto  md:min-w-0">
+            <div class="relative flex flex-wrap justify-center flex-col bg-persian-green-600 border-gray-300">
+                <div class="mb-0 pb-5 m-auto font-serif text-white text-5xl capitalize">Hello</div>
             </div>
             <div class="relative min-w-0 break-words  bg-white   border p-10 pb-8">
 
