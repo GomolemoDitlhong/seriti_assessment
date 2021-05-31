@@ -5,7 +5,11 @@
 <div class="sm:px-4 flex flex-wrap h-screen justify-center bg-gradient">
 
         <div class="md:w-1/4 m-auto">
-            <div class="relative min-w-0 break-words border bg-white p-10 pb-8">
+            <div class="flex flex-wrap justify-center flex-col bg-persian-green-600 border-gray-200">
+                <div class="pb-5 mb-0  m-auto font-serif text-white text-5xl capitalize">Hellow</div>
+            </div>
+            <div class="relative min-w-0 break-words  bg-white   border p-10 pb-8">
+
                 <div class="border-b flex flex-wrap justify-center flex-col border-gray-200">
                     <div class="pb-5 mb-0  m-auto font-bold text-gray-900 text-2xl uppercase"> <i class="fa fa-user" aria-hidden="true"></i> sign in</div>
                 </div>
