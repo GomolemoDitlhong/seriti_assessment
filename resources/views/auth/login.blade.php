@@ -22,7 +22,7 @@
                               EMAIL
                             </label>
                             <div class="">
-                                <input id="email" type="email" class="appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                <input id="email" type="email" class="appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-600 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" name="email" value="{{ old('email') }}" required placeholder="Email" autocomplete="email" autofocus>
                             @error('email')
                             <span class="hidden mt-1 text-sm text-red" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -37,7 +37,7 @@
                               PASSWORD
                             </label>
                             <div class="">
-                                <input id="password" type="password"  class="appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" id="email" type="email" name="email" value="{{ old('email') }}" name="password" required autocomplete="current-password">
+                                <input id="password" type="password"  class="appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline @error('email') bg-red-700 @enderror" id="email" type="email" name="email" value="{{ old('email') }}" name="password" required placeholder="Password" autocomplete="current-password">
 
                                 @error('password')
                                 <span class="hidden mt-1 text-sm text-red" role="alert">
