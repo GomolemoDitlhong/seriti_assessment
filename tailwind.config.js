@@ -49,6 +49,15 @@ module.exports = {
                 }
 
             },
+            lineHeight: {
+                'match-text-sm': '0.625rem',
+                '12': '0.625rem',
+               },
+               height: {
+                '0.5': '0.125rem',
+                '7.5': '1.875rem',
+                '12.5': '3.125rem',
+              }
         },
     },
     variants: {

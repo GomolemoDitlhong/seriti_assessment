@@ -8,9 +8,10 @@ window._ = require('lodash');
 
 try {
     window.$ = window.jQuery = require('jquery');
-    require('./functions');
     require('d3');
-    window.c3 = require('c3/c3.js');
+    window.c3 = require('c3/c3');
+
+    require('./menu.js');
 
 } catch (e) {
     console.log(e);
@@ -41,9 +42,7 @@ if (token) {
     console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
-Seriti.init();
 
-Seriti.onceOffInit();
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -61,3 +60,5 @@ Seriti.onceOffInit();
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+

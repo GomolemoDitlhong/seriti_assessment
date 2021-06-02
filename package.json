@@ -26,9 +26,9 @@
     },
     "dependencies": {
         "c3": "^0.7.20",
-        "chartjs": "^0.3.24",
+        "chart.js": "^2.9.3",
         "font-awesome": "^4.7.0",
-        "tailwind-color-palette": "^1.0.3"
+        "vue-chartjs": "^3.5.1"
     },
     "name": "seriti_assessment",
     "version": "1.0.0",
