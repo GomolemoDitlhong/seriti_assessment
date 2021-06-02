@@ -24,6 +24,6 @@ Auth::routes();
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 Route::get('/dummy-data-piechart', [App\Http\Controllers\Controller::class, 'PieChart'])->name('dummy-data-piechart');
 Route::get('/duppy-data-curvedchart', [App\Http\Controllers\Controller::class, 'CurvedChart'])->name('duppy-data-curvedchart');
