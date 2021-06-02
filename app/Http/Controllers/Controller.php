@@ -10,4 +10,22 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function PieChart(){
+        $labels = array('item1', 'item2');
+        $data  = array(8,1);
+        return response()->json(['labels' => $labels, 'data' => $data]);
+      }
+
+    public function Likes(){
+        $labels = array('item1', 'item2');
+        $data  = array(8,1);
+        return response()->json(['labels' => $labels, 'data' => $data]);
+      }
+    public function CurvedChart(){
+        $month = array('January', 'February', 'March', 'April', 'May');
+        $data1  = array(65, 60, 80, 82, 55);
+        $data2  = array(28, 40, 48, 19, 85);
+        return response()->json(['month' => $month, 'data1' => $data1, 'data2' => $data2]);
+    }
 }

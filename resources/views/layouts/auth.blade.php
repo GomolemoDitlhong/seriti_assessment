@@ -19,11 +19,17 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
-    <div id="app">
-        <main class="relative">
+<body class="bg-gray-200">
+    <!-- The wrapper -->
+    <div id="app" class="wrapper">
+
+        <!-- The Menu -->
+        @include('layouts.menus.side')
+
+        <!-- The Content -->
+        <main class="relative" id="content">
+            @include('layouts.menus.top')
             @yield('content')
         </main>
-    </div>
 </body>
 </html>

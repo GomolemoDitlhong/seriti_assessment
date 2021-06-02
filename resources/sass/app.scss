@@ -1,8 +1,19 @@
+
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 // Variables
 @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// Library
+@import '~font-awesome/scss/font-awesome';
+@import "~c3/c3.css";
+
+// Sidebar
+@import "sidebar";
+
+.bg-gradient {
+    height: 100%;
+    background: linear-gradient(to bottom, #019587 50%, #e4e4e4 50%, #e4e4e4);
+  }

@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return auth()->check() ? redirect('home') : redirect('/login');
+     return view('auth.login');
 });
+
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Auth::routes(['register' => false]);
+
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/dummy-data-piechart', [App\Http\Controllers\Controller::class, 'PieChart'])->name('dummy-data-piechart');
+Route::get('/duppy-data-curvedchart', [App\Http\Controllers\Controller::class, 'CurvedChart'])->name('duppy-data-curvedchart');
