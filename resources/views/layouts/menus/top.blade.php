@@ -13,10 +13,10 @@
         <div class="absolute inset-y-0 right-0 flex items-center  pr-2 sm:ml-6 sm:pr-0">
 
             <div class="relative lg:px-5 px-3 text-gray-600">
-                <input class="border-transparent bg-green-200 h-7.5 w-48 rounded-sm placeholder-gray-600 p-2.5 text-sm leading-12 focus:outline-none"
-                  type="search" name="search" placeholder="Search">
-                <button type="submit" class="absolute right-0 top-0 mt-2 mr-6">
-                  <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                <input class="border-transparent bg-green-200 h-7.5 w-48 rounded-sm placeholder-gray-600 p-2.5 text-base leading-12 focus:outline-none"
+                  type="text" name="search" placeholder="Search">
+                <button type="submit" class="group absolute right-0 p-2 shadow-none border-none top-0 transition rounded-r-sm mt-0 mr-5 hover:bg-green-800 hover:text-white hover:ring-2 focus:outline-none">
+                  <svg class="text-gray-600 group-hover:text-white h-3.5 w-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                     viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
                     width="512px" height="512px">
@@ -27,9 +27,8 @@
               </div>
 
             <!-- Notification-->
-            <button class="relative lg:px-5 px-3 rounded-full text-white hover:text-gray-700 focus:outline-none">
+            <button class="relative lg:px-5 px-3 rounded-full transition text-white hover:text-gray-700 focus:outline-none">
                 <span class="sr-only">View notifications</span>
-                <!-- Heroicon name: outline/bell -->
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                 </svg>
@@ -38,7 +37,7 @@
           <!-- Profile dropdown -->
           <div class="relative lg:px-5 px-3">
             <div>
-              <button type="button" class="flex text-sm rounded-full focus:outline-none text-white hover:text-gray-700" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <button type="button" class="flex text-sm transition rounded-full focus:outline-none text-white hover:text-gray-700" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                 <i class="fa fa-user text-xl " aria-hidden="true"></i>
               </button>
             </div>
