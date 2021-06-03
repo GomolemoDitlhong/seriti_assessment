@@ -1,5 +1,5 @@
 <template>
-  <div class="relative md:rounded-md bg-white p-5">
+  <div class="relative md:rounded-md bg-white pb-10 p-5 md:pb-8">
     <h1 class="text-2xl font-bold">{{ title }}</h1>
     <div class="relative pt-7">
       <canvas id="myPieChart" ref="chart"></canvas>

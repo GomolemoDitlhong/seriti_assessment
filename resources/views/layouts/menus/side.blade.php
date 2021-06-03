@@ -1,8 +1,7 @@
 <!-- side menu bar -->
-<div class="overflow-y-auto scrollbar fixed h-screen z-20">
+<div class="sidebar bg-green-900 text-blue-100 w-56 space-y-6 absolute inset-y-0 left-0 top-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out overflow-y-auto h-screen z-20">
     <!-- sidebar -->
-    <nav  id="style-1"
-        class="sidebar overflow-y-auto bg-green-900 text-blue-100 w-56 h-full space-y-6 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+    <nav>
         <div class="bg-green-700 text-transparent w-100 h-12.5 block sticky top-0 z-30"></div>
         <div class="mt-5">
             <ul>
@@ -21,15 +20,6 @@
                   <sub-menu-component title="Sub menu 11"></sub-menu-component>
                   <sub-menu-component title="Sub menu 12"></sub-menu-component>
                   <sub-menu-component title="Sub menu 13"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 14"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 15"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 16"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 17"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 18"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 19"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 20"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 21"></sub-menu-component>
-                  <sub-menu-component title="Sub menu 22"></sub-menu-component>
                 </link-dropdown-component>
                 <link-component title="Charts" link="h-16" :icon="'fa-pie-chart'"></link-component>
                 <link-dropdown-component title="Forms" link="h-20" icon="fa-pencil-square-o">

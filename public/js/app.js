@@ -2344,10 +2344,7 @@ $(document).ready(function () {
 
   btn.addEventListener("click", function () {
     sidebar.classList.toggle("-translate-x-full");
-  }); // $('#sidebarCollapse').on('click', function () {
-  //     $('#sidebar, #content, #cover').toggleClass('active');
-  //     $(this).toggleClass('active');
-  // });
+  });
 });
 
 /***/ }),
@@ -109847,15 +109844,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "relative md:rounded-md bg-white p-5" }, [
-    _c("h1", { staticClass: "text-2xl font-bold" }, [
-      _vm._v(_vm._s(_vm.title))
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "relative pt-7" }, [
-      _c("canvas", { ref: "chart", attrs: { id: "myPieChart" } })
-    ])
-  ])
+  return _c(
+    "div",
+    { staticClass: "relative md:rounded-md bg-white pb-10 p-5 md:pb-8" },
+    [
+      _c("h1", { staticClass: "text-2xl font-bold" }, [
+        _vm._v(_vm._s(_vm.title))
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "relative pt-7" }, [
+        _c("canvas", { ref: "chart", attrs: { id: "myPieChart" } })
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

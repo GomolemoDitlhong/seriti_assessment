@@ -1,9 +1,9 @@
-<div class="bg-green-500 sticky top-0 z-40 ">
+<div class="bg-green-500 sticky top-0 z-40 pl-2.5 md:pl-0">
     <div class="mx-auto p-2.5 sm:px-6">
       <div class="relative bg-green-500 h-7.5">
         <!-- Left Wrapper-->
-        <div class="absolute inset-y-0 left-0 flex items-center">
-            <button type="button" class="mobile-menu-button btn btn-light flex flex-col focus:outline-none focus:border-none ">
+        <div class=" flex items-center">
+            <button type="button" class="absolute left-0 text-white mobile-menu-button btn btn-light flex flex-col top-3 focus:outline-none focus:border-none z-40 ">
                 <span class="bg-white rounded-sm h-0.5 w-4 mb-1"></span>
                 <span class="bg-white rounded-sm h-0.5  w-4 mb-1"></span>
                 <span class="bg-white rounded-sm h-0.5  w-4 mb-1"></span>
@@ -15,7 +15,7 @@
             <div class="relative lg:px-5 px-3 text-gray-600">
                 <input class="border-transparent bg-green-200 h-7.5 w-48 rounded-sm placeholder-gray-600 p-2.5 text-base leading-12 focus:outline-none"
                   type="text" name="search" placeholder="Search">
-                <button type="submit" class="group absolute right-0 p-2 shadow-none border-none top-0 transition rounded-r-sm mt-0 mr-5 hover:bg-green-800 hover:text-white hover:ring-2 focus:outline-none">
+                <button type="submit" class="group absolute right-0 p-2 shadow-none border-none top-0 transition rounded-r-sm mt-0 :md:mr-5 mr-3 hover:bg-green-800 hover:text-white hover:ring-2 focus:outline-none">
                   <svg class="text-gray-600 group-hover:text-white h-3.5 w-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                     viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
@@ -46,16 +46,3 @@
       </div>
     </div>
   </div>
-
-       <!-- mobile menu bar -->
-       {{-- <div class="bg-gray-800 text-gray-100 flex justify-between ">
-        <!-- logo -->
-        <a href="#" class="block p-4 text-white font-bold">Better Dev</a>
-
-        <!-- mobile menu button -->
-        <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
-          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div> --}}
