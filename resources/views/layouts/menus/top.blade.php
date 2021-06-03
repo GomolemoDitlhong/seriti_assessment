@@ -15,7 +15,7 @@
             <div class="relative lg:px-5 px-3 text-gray-600">
                 <input class="border-transparent bg-green-200 h-7.5 w-48 rounded-sm placeholder-gray-600 p-2.5 text-base leading-12 focus:outline-none"
                   type="text" name="search" placeholder="Search">
-                <button type="submit" class="group absolute right-0 p-2 shadow-none border-none top-0 transition rounded-r-sm mt-0 :md:mr-5 mr-3 hover:bg-green-800 hover:text-white hover:ring-2 focus:outline-none">
+                <button type="submit" class="group absolute right-0 p-2 shadow-none border-none top-0 transition rounded-r-sm mt-0 md:mr-5 mr-3 hover:bg-green-800 hover:text-white hover:ring-2 focus:outline-none">
                   <svg class="text-gray-600 group-hover:text-white h-3.5 w-3.5 fill-current" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                     viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
