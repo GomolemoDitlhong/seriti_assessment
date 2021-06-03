@@ -1,6 +1,6 @@
 ## Seriti Technical Assessment 
 
-Laravel 8,Vue.js and Tailwind were used. No database require
+Laravel 8, Vue.js and Tailwind were used. No database connection required
 
 ## Future Developments
 
