@@ -1,21 +1,21 @@
-<div class="bg-green-500">
+<div class="bg-green-500 sticky top-0 z-40 ">
     <div class="mx-auto p-2.5 sm:px-6">
       <div class="relative bg-green-500 h-7.5">
-        <!-- Right Wrapper-->
+        <!-- Left Wrapper-->
         <div class="absolute inset-y-0 left-0 flex items-center">
-            <button type="button" class="mobile-menu-button btn btn-light flex flex-col focus:outline-none focus:border-none z-40">
+            <button type="button" class="mobile-menu-button btn btn-light flex flex-col focus:outline-none focus:border-none ">
                 <span class="bg-white rounded-sm h-0.5 w-4 mb-1"></span>
                 <span class="bg-white rounded-sm h-0.5  w-4 mb-1"></span>
                 <span class="bg-white rounded-sm h-0.5  w-4 mb-1"></span>
             </button>
         </div>
-             <!-- Left Wrapper-->
+             <!-- Right Wrapper-->
         <div class="absolute inset-y-0 right-0 flex items-center  pr-2 sm:ml-6 sm:pr-0">
 
             <div class="relative lg:px-5 px-3 text-gray-600">
-                <input class="border-transparent bg-green-200 h-7.5 rounded-sm placeholder-gray-600 p-2.5 text-sm leading-12 focus:outline-none"
+                <input class="border-transparent bg-green-200 h-7.5 w-48 rounded-sm placeholder-gray-600 p-2.5 text-sm leading-12 focus:outline-none"
                   type="search" name="search" placeholder="Search">
-                <button type="submit" class="absolute right-0 top-0 mt-2 mr-8">
+                <button type="submit" class="absolute right-0 top-0 mt-2 mr-6">
                   <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                     viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"

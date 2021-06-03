@@ -1,12 +1,16 @@
 <template>
-  <div class="relative pt-7">
-    <canvas ref="chart"></canvas>
+  <div class="relative md:rounded-md bg-white p-5">
+    <h1 class="text-2xl font-bold">{{ title }}</h1>
+    <div class="relative pt-7">
+      <canvas id="myPieChart" ref="chart"></canvas>
+    </div>
   </div>
 </template>
 <script>
 export default {
+  props: ["title", "link"],
   mounted() {
-    let uri = "https://seriti.test/dummy-data-piechart";
+    let uri = "https://seriti.test/" + this.link;
     axios
       .get(uri)
       .then((response) => {
