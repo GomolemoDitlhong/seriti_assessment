@@ -1872,7 +1872,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    var uri = "https://seriti.test/" + this.link;
+    var uri = this.link;
     axios.get(uri).then(function (response) {
       _this.likes = response.data.summary;
     })["catch"](function (error) {
@@ -1913,7 +1913,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    var uri = "https://seriti.test/" + this.link;
+    var uri = this.link;
     axios.get(uri).then(function (response) {
       var chart = _this.$refs.chart;
       var ctx = chart.getContext("2d");
@@ -2007,7 +2007,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    var uri = "https://seriti.test/" + this.link;
+    var uri = this.link;
     axios.get(uri).then(function (response) {
       var chart = _this.$refs.chart;
       var ctx = chart.getContext("2d");

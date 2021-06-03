@@ -24,7 +24,7 @@ export default {
     };
   },
   mounted() {
-    let uri = "https://seriti.test/" + this.link;
+    let uri = this.link;
     axios
       .get(uri)
       .then((response) => {
