@@ -7,11 +7,6 @@ $(document).ready( function (){
     btn.addEventListener("click", () => {
         sidebar.classList.toggle("-translate-x-full");
     });
-
-    // $('#sidebarCollapse').on('click', function () {
-    //     $('#sidebar, #content, #cover').toggleClass('active');
-    //     $(this).toggleClass('active');
-    // });
 });
 
 

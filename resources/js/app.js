@@ -14,10 +14,17 @@ import { Line } from "vue-chartjs";
 import { Pie } from "vue-chartjs";
 
 // Vue Components
+Vue.component('page-header-component', require('./components/layouts/PageHeaderComponent.vue').default);
 
-Vue.component('pie-chart', require('./components/PieChart.vue').default);
-Vue.component('line-chart', require('./components/LineChart.vue').default);
-Vue.component('menu-link', require('./components/MenuLink.vue').default);
+Vue.component('link-dropdown-component', require('./components/menus/LinkDropdownComponent.vue').default);
+Vue.component('link-component', require('./components/menus/LinkComponent.vue').default);
+Vue.component('sub-menu-component', require('./components/menus/SubMenuComponent.vue').default);
+
+Vue.component('summary-component', require('./components/SummaryComponent.vue').default);
+
+
+Vue.component('pie-chart', require('./components/charts/PieChart.vue').default);
+Vue.component('line-chart', require('./components/charts/LineChart.vue').default);
 
 
 /**
