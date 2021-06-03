@@ -21,15 +21,17 @@
 </head>
 <body class="bg-gray-200">
     <!-- The wrapper -->
-    <div id="app" class="wrapper">
+    <div id="app" class="relative">
 
-        <!-- The Menu -->
-        @include('layouts.menus.side')
-
-        <!-- The Content -->
-        <main class="relative" id="content">
-            @include('layouts.menus.top')
-            @yield('content')
-        </main>
+        <div id="app" class="min-h-screen md:flex">
+            @include('layouts.menus.side')
+            <!-- The Content -->
+            <main class="relative h-screen overflow-hidden flex-1">
+                    <!-- The Menu -->
+                @include('layouts.menus.top')
+                @yield('content')
+            </main>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,14 +1,16 @@
-</<template>
-
-<div class="relative pt-7">
-    <canvas class="m-auto " ref="chart"></canvas>
-</div>
+<template>
+  <div class="relative md:rounded-md bg-white p-5">
+    <h1 class="text-2xl font-bold">{{ title }}</h1>
+    <div class="relative pt-7">
+      <canvas id="myLineChart" ref="chart"></canvas>
+    </div>
+  </div>
 </template>
-
 <script>
 export default {
+  props: ["title", "link"],
   mounted() {
-    let uri = "https://seriti.test/duppy-data-curvedchart";
+    let uri = "https://seriti.test/" + this.link;
     axios
       .get(uri)
       .then((response) => {

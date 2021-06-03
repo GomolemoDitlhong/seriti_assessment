@@ -17,11 +17,26 @@ class Controller extends BaseController
         return response()->json(['labels' => $labels, 'data' => $data]);
       }
 
+
+    public function Users(){
+        $users = 5;
+        return response()->json(['summary' => $users]);
+    }
+
     public function Likes(){
-        $labels = array('item1', 'item2');
-        $data  = array(8,1);
-        return response()->json(['labels' => $labels, 'data' => $data]);
-      }
+        $likes = 25;
+        return response()->json(['summary' => $likes]);
+    }
+    public function Uploads(){
+        $uploads = 10;
+        return response()->json(['summary' => $uploads]);
+    }
+
+    public function stars(){
+        $stars = 500;
+        return response()->json(['summary' => $stars]);
+    }
+
     public function CurvedChart(){
         $month = array('January', 'February', 'March', 'April', 'May');
         $data1  = array(65, 60, 80, 82, 55);
