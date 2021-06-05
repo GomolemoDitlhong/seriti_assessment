@@ -2,11 +2,14 @@
 
 Laravel 8, Vue.js and Tailwind were used. No database connection required
 
+## How to view pages
+
+- view login page at /login or / url.
+- view dashboard page at /dashboard  !important (no authentication required).
+
 ## Future Developments
 
-- Sidemenu dropdown submenu vue component.
 - Menu burger animation on click vue.
-- Maintain width: 100% of chart vue component below 411px sceensize.
 ## Deployment
 
 - Helpful deployment resource available at (https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-laravel-with-lemp-on-ubuntu-18-04).
