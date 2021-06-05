@@ -56,3 +56,70 @@ svg.rotate-90 {
     width: 100% !important;
     height: auto !important;
 }
+
+// .mobile-menu-button {
+
+// }
+
+.mobile-menu-button span {
+    // width: 80%;
+    // height: 2px;
+    // margin: 0 auto;
+    // display: block;
+    transition: all 0.4s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+
+.mobile-menu-button span:first-of-type {
+    /* rotate first one */
+    transform: rotate(-45deg) translate(2px, 2px);
+}
+
+.mobile-menu-button span:nth-of-type(2) {
+    /* second one is not visible */
+    opacity: 0;
+}
+
+.mobile-menu-button span:last-of-type {
+    /* rotate third one */
+    transform: rotate(45deg) translate(1px, -1px);
+}
+
+.mobile-menu-button.active span {
+    /* no rotation */
+    transform: none;
+    /* all bars are visible */
+    opacity: 1;
+    margin: 5px auto;
+}
+
+.mobile-menu-button span:first-of-type,
+.mobile-menu-button span:nth-of-type(2),
+.mobile-menu-button span:last-of-type {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+.mobile-menu-button.active span:first-of-type {
+    transform: rotate(-40deg) translate(-1px, -2px);
+}
+.mobile-menu-button.active span:nth-of-type(2) {
+    opacity: 0;
+}
+.mobile-menu-button.active span:last-of-type {
+    transform: rotate(40deg) translate(-2px, -1px);
+}
+
+  /* Ripple effect Menu Button */
+.overlay {
+    background-position: center;
+    transition: background 0.4s;
+  }
+.overlay:hover {
+    background: #ffffff00 radial-gradient(circle, transparent 1%, #269586 1%) center/15000%;
+}
+.overlay:active {
+    background-color:  #ffffffa4;
+    background-size: 100%;
+    transition: background 0.4s;
+  }
