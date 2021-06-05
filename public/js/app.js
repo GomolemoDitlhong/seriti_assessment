@@ -2344,6 +2344,7 @@ $(document).ready(function () {
 
   btn.addEventListener("click", function () {
     sidebar.classList.toggle("-translate-x-full");
+    btn.classList.toggle("active");
   });
 });
 

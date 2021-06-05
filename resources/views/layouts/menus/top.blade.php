@@ -1,15 +1,8 @@
 <div class="bg-green-500 sticky top-0 z-40 pl-2.5 md:pl-0">
     <div class="mx-auto p-2.5 sm:px-6">
       <div class="relative bg-green-500 h-7.5">
-        <!-- Left Wrapper-->
-        <div class=" flex items-center">
-            <button type="button" class="absolute left-0 text-white mobile-menu-button btn btn-light flex flex-col top-3 focus:outline-none focus:border-none z-40 ">
-                <span class="bg-white rounded-sm h-0.5 w-4 mb-1"></span>
-                <span class="bg-white rounded-sm h-0.5  w-4 mb-1"></span>
-                <span class="bg-white rounded-sm h-0.5  w-4 mb-1"></span>
-            </button>
-        </div>
-             <!-- Right Wrapper-->
+
+             <!-- Right -->
         <div class="absolute inset-y-0 right-0 flex items-center  pr-2 sm:ml-6 sm:pr-0">
 
             <div class="relative lg:px-5 px-3 text-gray-600">
@@ -42,6 +35,15 @@
               </button>
             </div>
           </div>
+        </div>
+
+        <!-- Left-->
+        <div class="overlay h-8 w-8 relative rounded-full  grid place-items-center">
+                <button type="button" class="mobile-menu-button w-5 h-5 text-white btn btn-light focus:outline-none focus:border-none z-40 ">
+                    <span class="bg-white block h-0.5 rounded-sm"></span>
+                    <span class="bg-white block h-0.5 rounded-sm"></span>
+                    <span class="bg-white block h-0.5 rounded-sm"></span>
+                </button>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ $(document).ready( function (){
     // add our event listener for the click
     btn.addEventListener("click", () => {
         sidebar.classList.toggle("-translate-x-full");
+        btn.classList.toggle("active");
     });
 });
 
